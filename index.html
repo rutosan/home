@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" class="h-100 bg-dark" id="home">
+<html lang="ja" class="h-100" id="home">
   <head>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
@@ -12,7 +12,7 @@
 
     <title>My Own Room</title>
   </head>
-  <body class="h-100 text-white">
+  <body class="h-100">
     <div class="container-fluid  fixed-top p-0 ">
       <nav class="navbar navbar-expand navbar-light justify-content-end menu-bar">
         <ul class="navbar-nav mt-3 pt-md-0">
@@ -23,30 +23,31 @@
         </ul>
       </nav>
     </div>
-    <header class =" h-100 d-flex align-items-center bg-white container">
+    <header class =" h-100 d-flex align-items-center container">
       <div class="mx-auto">
         <h1 class="main-title text-body" id="title">My Own Room</h1>
         <canvas class="background"></canvas>
       </div>
     </header>
 <!-- Aboutここから -->
-    <div class="container-fluid p-0 ">
-      <div id="subtitle" class="text-center pt-3 mb-3 bg-secondary">
+    <div class="container-fluid p-0 w-100 mx-auto ">
+      <div id="subtitle" class="text-center pt-3 mb-3">
         <h2 id="about" class="text-center ">自己紹介</h2>
         <p>About</p>
       </div>
       <div class="container mt-3">
         <div class="row">
+          <div class="col-0 col-md-1 "></div>
           <div class="col-12 col-md-3 p-0 text-center">
             <img src="img/aikonn.jpeg" class="img-fluid mx-auto" alt="Responsive image">
           </div>
-          <div class="col-12 col-md-8 ml-md-5 mt-md-0 mt-5 p-0">
+          <div class="col-12 col-md-6 ml-md-5 mt-5 p-0 right_text">
             
             <p class="m-0">1996年 1月 31日生まれ(24歳)</p>
             <p class="m-0">職業:インフラエンジニア</p>
             <p class="m-0">主にネットワーク障害発生時の一次窓口や社外向けのヘルプデスク業務</p>
             <div class="container">
-                <div class="container text-center font-weight-normal" id="sub-title">
+                <div class="container text-center font-weight-normal mt-3" id="sub-title">
                   <h3>経歴</h3>
                 </div>
                   <div class="row">
@@ -63,7 +64,7 @@
                   </div>
             </div>
             <div class="container text-center my-3">
-              <a href="https://satsan.work/about" class="btn btn-outline-dark text-white"><<詳しくはこちら>></a>
+              <a href="https://satsan.work/about" class="btn btn-outline-dark"><<詳しくはこちら>></a>
             </div>
           </div>
         </div>
@@ -72,7 +73,7 @@
 
       <!-- 制作実績 -->
     <div class="mt-5">
-      <div id="subtitle" class="text-center bg-secondary">
+      <div id="subtitle" class="text-center">
         <h2 id="work" class="text-center">制作実績・作ったもの</h2>
         <p>Works</p>
       </div>
@@ -80,7 +81,7 @@
       <div class="container ">
         <div class="row">
           <div class="box col-12 col-md-3 p-0">
-            <img src="img/background.png" class="box bg-info" alt="">
+            <img src="img/background.png" class="box" alt="">
                   <a href="">
                     <div class="fadein d-flex align-items-center">
                       <p class="mx-auto"> Portfolio</p>
@@ -89,7 +90,7 @@
           </div>
 
           <div class="box col-12 col-md-3 p-0">
-            <img src="img/金魚.png" class="box bg-info" alt="">
+            <img src="img/金魚.png" class="box" alt="">
                   <a href="">
                     <div class="fadein d-flex align-items-center">
                       <p class="mx-auto"> 自己紹介ページ(About)</p>
@@ -98,7 +99,7 @@
           </div>
 
           <div class="box col-12 col-md-3 p-0">
-            <img src="img/My Work.png" class="box bg-info" alt="">
+            <img src="img/My Work.png" class="box" alt="">
                   <a href="">
                     <div class="fadein d-flex align-items-center">
                       <p class="mx-auto"> 作品集</p>
@@ -118,59 +119,59 @@
 
       <!--スキル紹介  -->
 
-      <div class="mt-5">
-        <div id="skill" class="text-center mb-3 bg-secondary">
+      <div class="mt-5 bg-dark pb-4 text-white">
+        <div id="skill" class="text-center mb-3">
           <h2 class="text-center">できる事・スキル</h2>
           <p>Skills</p>
         </div>  
 
         <div class="container">
-          <div class="skill-name bg-danger mt-3">
+          <div class="skill-name mt-3 bg-success">
             <h4>HTML5</h4>
           </div>
           <div class="progress mt-2 mb-1">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
               65%
             </div>
           </div>
-          <div class="text-white">
+          <div>
               後から編集がしやすいよう「見やすさ」を大切にしております。
           </div>
 
-          <div class="skill-name bg-danger mt-3">
+          <div class="skill-name mt-3 bg-info">
             <h4>CSS3</h4>
           </div>
           <div class="progress mt-2 mb-1">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                 65%
             </div>
            </div>
-          <div class="text-white">
+          <div>
              Bootstrapを用いたコーディングが可能
           </div>
 
-          <div class="skill-name bg-danger mt-3">
+          <div class="skill-name mt-3 bg-warning">
            <h4>jQuery</h4>
           </div>
           <div class="progress mt-2 mb-1">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
             30%
           </div>
          </div>
-        <div class="text-white">
+        <div>
            シンプルな動きのあるwebサイトの実装が可能
         </div>
 
 <!-- 
-  <div class="skill-name bg-danger mt-3">
+  <div class="skill-name  mt-3">
     <h4>Ruby on Rails</h4>
   </div>
   <div class="progress mt-2 mb-1">
-     <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
         30%
       </div>
   </div>
-  <div class="text-white">
+  <div>
     ここにテキストが入ります
   </div>
 -->
@@ -179,19 +180,19 @@
 </div>
 
     <div class="container-fluid mt-3 p-0 ">
-      <div class="text-center font-weight-normal bg-secondary" id="sub-title">
+      <div class="text-center font-weight-normal " id="sub-title">
         <h3>仕事で大切にしていること</h3>
-        <p>My Policy</p>
+        <p class="mb-0">My Policy</p>
       </div>
-        <div class="row bg-black">
+        <div class="row">
           <div class="col-md-5 p-0">
             <img src="img/コミュニケーション.jpeg" class="w-100 mb-5">
           </div>
-          <div class="col-md-7 bg-dark p-4">
+          <div class="col-md-7 p-4">
             <h3 class="text-center">コミュニケーション</h3>
             <p class="text-center">Communication</p>
         
-            <p id="text-contents" class="">
+            <p id="text-contents" class="w-75 mx-auto">
               ヘルプデスクの仕事ではお客様の問題をいかに早く<br>
               解決することを第一にしておりました。<br>
               そのために相手の立場になって考えるように心掛け<br>
@@ -200,14 +201,14 @@
           </div>
         </div>  
 
-        <div class="row bg-white text-black">
+        <div class="row text-black">
           <div class="col-md-5 p-0 order-md-2">
             <img src="img/考える人.png" class="w-100">
           </div>
-          <div class="col-md-7 bg-light text-body p-4 order-md-1">
+          <div class="col-md-7 text-body p-4 order-md-1">
             <h3 class="text-center">先を見据えた行動</h3>
             <p class="text-center">Looking Ahead</p>
-            <p id="text-contents" class="">
+            <p id="text-contents" class="w-75 mx-auto">
               テレビ局のADとして働いていた頃から<br>
               仕事の効率化を図るためにチーム全体と各個人ごとの<br>
               進捗などを意識することで<br>
@@ -223,11 +224,11 @@
           <div class="col-md-5 p-0">
             <img src="img/ToDOリスト.png" class="w-100">
           </div>
-          <div class="col-md-7 bg-dark p-4">
+          <div class="col-md-7 p-4">
             <h3 class="text-center">進捗管理</h3>
             <p class="text-center">Progress Management</p>
         
-            <p id="text-contents" class="">
+            <p id="text-contents" class="mx-auto">
               仕事をする前に必ず自分のやるべきタスクを<br>
               リストアップをして進捗の整理をします。<br>
               「やれませんでした」という結果にならないよう<br>

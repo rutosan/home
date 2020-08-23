@@ -1,10 +1,8 @@
 .menu-bar {
-  background: #ffffff;
   opacity: 0.7;
 }
 
-.menu-bar:hover {
-  background: #ffffff;
+.menu-bar ul:hover {
   opacity: 1;
 }
 
@@ -22,6 +20,11 @@
   top: 50%;
   left: 40%;
   z-index: 1;
+}
+
+.right_text {
+  float: right;
+  margin-left: 1000px;
 }
 
 .box {
@@ -62,4 +65,10 @@
 .skill-name h4 {
   font-size: 12px;
   color: #ffffff;
+}
+
+#text-contents {
+  line-height: 1.7;
+  font-size: 18px;
+  width: 65%;
 }
