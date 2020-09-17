@@ -2,17 +2,17 @@
 <html lang="ja" class="h-100" id="home">
   <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>My Own Room</title>
   </head>
-  <body class="h-100">
+  <body class="h-100 js-modal-close">
     <div class="container-fluid  fixed-top p-0 ">
       <nav class="navbar navbar-expand navbar-light justify-content-end menu-bar">
         <ul class="navbar-nav mt-3 pt-md-0">
@@ -72,50 +72,84 @@
       </div>
 
       <!-- 制作実績 -->
-    <div class="mt-5">
-      <div id="subtitle" class="text-center">
-        <h2 id="work" class="text-center">制作実績・作ったもの</h2>
+      <div id="subtitle" class="text-center js-modal-open">
+        <h2 id="work " class="text-center">制作実績・作ったもの</h2>
         <p>Works</p>
       </div>
 
-      <div class="container ">
+      <div class="container work_contents">
         <div class="row">
-          <div class="box col-12 col-md-3 p-0">
-            <img src="img/background.png" class="box" alt="">
-                  <a href="">
-                    <div class="fadein d-flex align-items-center">
-                      <p class="mx-auto"> Portfolio</p>
-                    </div>
-                  </a>
+          <div class="box col-12 col-md-3 p-0 mr-3 open1">
+            <img src="img/MyOwnRoom.png" class="box" alt="">
+                <div class="fadein d-flex align-items-center">
+                  <p class="mx-auto"> Portfolio</p>
+                </div>
           </div>
 
-          <div class="box col-12 col-md-3 p-0">
+           <!-- modalウィンドウ1 -->
+           <div class="modal_box1 ", class ="">
+            <div class="modal_content mx-auto p-1">
+              <img src="img/MyOwnRoom.png" alt="">
+              <div class="modal_text mx-auto p-1">
+                <h3>InkGrow</h3>
+                <p>ここに説明文</p>
+                <h5>使用言語</h5>
+                <p>html,css,bootstrap,jquery,Rails</p>
+              </div>
+            </div>
+            <a class="close p-1",href="">close</a>
+          </div>
+
+        <!--モーダルウィンドウここまで  -->
+
+        <div class="box col-12 col-md-3 p-0 mr-3 open2">
             <img src="img/金魚.png" class="box" alt="">
-                  <a href="">
-                    <div class="fadein d-flex align-items-center">
-                      <p class="mx-auto"> 自己紹介ページ(About)</p>
-                    </div>
-                  </a>
+                <div class="fadein d-flex align-items-center">
+                  <p class="mx-auto"> 自己紹介ページ(About)</p>
+                </div>
           </div>
 
-          <div class="box col-12 col-md-3 p-0">
-            <img src="img/My Work.png" class="box" alt="">
-                  <a href="">
-                    <div class="fadein d-flex align-items-center">
-                      <p class="mx-auto"> 作品集</p>
-                    </div>
-                  </a>
+           <!-- modalウィンドウ2 -->
+           <div class="modal_box2", class ="">
+            <div class="modal_content mx-auto p-1">
+              <img src="img/金魚.png" alt="">
+              <div class="modal_text mx-auto p-1">
+                <h3>InkGrow</h3>
+                <p>ここに説明文</p>
+
+                <h5>使用言語</h5>
+                <p>html,css,bootstrap,jquery,Rails</p>
+              </div>
+            </div>
+            <a class="close p-1",href="">close</a>
           </div>
 
-          <div class="box col-12 col-md-3 p-0">
-                  <a href="https://satsan.work/work">
-                    <div class="w-100 h-100 d-flex align-items-center">
-                      <p class="mx-auto"> もっと見る>>></p>
-                    </div>
-                  </a>
-          </div>
+        <!--モーダルウィンドウここまで  -->
+          
+          <div class="box col-12 col-md-3 p-0 open3">
+            <img src="img/InkGrow.png" class="box open" alt="">
+              <div class="fadein d-flex align-items-center">
+                <p class="mx-auto"> InkGrow</p>
+              </div>
+          </div>        
         </div>
       </div>
+      <!-- modalウィンドウ3 -->
+          <div class="modal_box3", class ="">
+            <div class="modal_content mx-auto p-1">
+              <img src="img/InkGrow.png" alt="">
+              <div class="modal_text mx-auto p-1">
+                <h3>InkGrow</h3>
+                <p>ここに説明文</p>
+
+                <h5>使用言語</h5>
+                <p>html,css,bootstrap,jquery,Rails</p>
+              </div>
+            </div>
+            <a class="close p-1",href="">close</a>
+          </div>
+
+        <!--モーダルウィンドウここまで  -->
 
       <!--スキル紹介  -->
 
@@ -154,32 +188,32 @@
            <h4>jQuery</h4>
           </div>
           <div class="progress mt-2 mb-1">
-          <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            30%
+          <div class="progress-bar " role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+            35%
           </div>
          </div>
         <div>
            シンプルな動きのあるwebサイトの実装が可能
         </div>
 
-<!-- 
-  <div class="skill-name  mt-3">
-    <h4>Ruby on Rails</h4>
-  </div>
-  <div class="progress mt-2 mb-1">
-     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-        30%
-      </div>
-  </div>
-  <div>
-    ここにテキストが入ります
-  </div>
--->
+
+        <div class="skill-name  mt-3 bg-danger">
+          <h4>Ruby on Rails</h4>
+        </div>
+        <div class="progress mt-2 mb-1">
+           <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              40%
+            </div>
+        </div>
+        <div>
+          Railsの基礎を習得。Gemを利用したアプリケーションの作成
+        </div>
+
 
 </div>
 </div>
 
-    <div class="container-fluid mt-3 p-0 ">
+    <div class="container mt-3 p-0 ">
       <div class="text-center font-weight-normal " id="sub-title">
         <h3>仕事で大切にしていること</h3>
         <p class="mb-0">My Policy</p>
@@ -193,10 +227,11 @@
             <p class="text-center">Communication</p>
         
             <p id="text-contents" class="w-75 mx-auto">
-              ヘルプデスクの仕事ではお客様の問題をいかに早く<br>
-              解決することを第一にしておりました。<br>
-              そのために相手の立場になって考えるように心掛け<br>
-              相手の話したいことを引き出せるよう取り組んでおりました。             
+              ヘルプデスクの仕事でお客様の問題を<br>
+              いかに早く解決することを第一にしているため<br>
+              常に相手の視点で考えるよう心掛けておりました。<br>
+              また、お客様が専門的な知識を持っていない場合でも相手に分かりやすい言葉や表現を選んで<br>
+              伝えたいことを引き出すよう取り組んでおりました。<br>
             </p>
           </div>
         </div>  
@@ -209,13 +244,16 @@
             <h3 class="text-center">先を見据えた行動</h3>
             <p class="text-center">Looking Ahead</p>
             <p id="text-contents" class="w-75 mx-auto">
-              テレビ局のADとして働いていた頃から<br>
-              仕事の効率化を図るためにチーム全体と各個人ごとの<br>
-              進捗などを意識することで<br>
-              仕事を自分で見つける<br>
-              「先を見据えた行動」が身につきました。<br>
-              この習慣は今の会社でも生かしており<br>
-              部署の残業時間の削減などの結果につながっております。          
+              テレビ局のADとして番組制作の現場では<br>
+              業務量が多く常に仕事に追われていました。<br>
+              そこで自分の仕事が手一杯になる前に先に終わらせるよう
+              心がけてました。<br>
+              主に番組全体の制作の進捗や他のADやディレクターが<br>
+              今どんなことをやっているのか常に気を配り、<br>
+              これから発生するであろう業務や案件を予測し<br>
+              先に取り組むことで負担を削減しました。<br>
+              結果として他のADの仕事をサポートもできるようになり、<br>
+              円滑な番組制作に貢献できました。<br>    
             </p>
           </div>
         </div>  
@@ -245,9 +283,9 @@
     </div>
 
 
-    <!-- Optional JavaScript -->
+   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
@@ -261,7 +299,52 @@
         connectParticles: true
       });</script>
 
+<script>
+$(function(){
+  $('.open1').click(
+  function() {
+  $('.modal_box1').fadeIn();
+  $('body').css('overflow','hidden');
+  });
+  
+  $('.close').click(
+  function() {
+  $('.modal_box1').fadeOut();
+  $('body').css('overflow','scroll');
+  });
+  });
 
+$(function(){
+  $('.open2').click(
+  function() {
+  $('.modal_box2').fadeIn();
+  $('body').css('overflow','hidden');
+  });
+  
+  $('.close').click(
+  function() {
+  $('.modal_box2').fadeOut();
+  $('body').css('overflow','scroll');
+  });
+  });
 
-  </body>
+  $(function(){
+  $('.open3').click(
+  function() {
+  $('.modal_box3').fadeIn();
+  $('body').css('overflow','hidden');
+  });
+  
+  $('.close').click(
+  function() {
+  $('.modal_box3').fadeOut();
+  $('body').css('overflow','scroll');
+  });
+  });
+  
+  </script>
+  
+
+</body>
+
 </html>

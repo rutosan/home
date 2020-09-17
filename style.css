@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 .menu-bar {
   background-color: #ffffff;
   opacity: 0.7;
@@ -52,6 +56,46 @@
   transition-duration: 1.5s;
 }
 
+
+.modal_box1,.modal_box2,.modal_box3 {
+  width: 80%;
+  height: 80%;
+  background-color:#ffffff;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  z-index: 4;
+  display: none;  
+  border: 8px double #1e90ff;
+}
+
+.modal_box1 a,.modal_box2 a,.modal_box3 a{
+  color: #1e90ff;
+  opacity: 0.5;
+}
+
+.modal_box1 a:hover,.modal_box2 a:hover,.modal_box3 a:hover{
+  color: #1e90ff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal_content{
+  color: #000000;
+  width: 65%;
+  height: 95%;
+  z-index: 5;
+  overflow: scroll;
+}
+
+.modal_content img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+
+
+
 .skill-name {
   width: 15%;
   text-align: center;
@@ -64,7 +108,7 @@
 }
 
 #text-contents {
-  line-height: 1.7;
+  line-height: 1.2;
   font-size: 18px;
   width: 65%;
 }
